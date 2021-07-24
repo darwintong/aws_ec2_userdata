@@ -1,0 +1,7 @@
+<powershell>
+iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
+choco install python -y
+choco install googlechrome -y
+(new-object net.webclient).DownloadFile('https://s3.amazonaws.com/aws-cli/AWSCLI64.msi','c:\AWSCLI64.msi')
+msiexec.exe /i 'C:\AWSCLI64.msi' /qn
+</powershell>
