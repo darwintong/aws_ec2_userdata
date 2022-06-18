@@ -1,0 +1,8 @@
+#- Make a filenamed index.html
+#- Place the following contents in that file:
+# <HTML><HEAD><TITLE>Picture</TITLE></HEAD><BODY><IMG SRC="file.png"></BODY></HTML>
+
+
+# COPY local file to AWS EC2
+scp -r -i /Users/[username]/Downloads/webserver.pem awspic.jpg ec2-user@13.210.51.119:/home/ec2-user
+
